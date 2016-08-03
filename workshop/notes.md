@@ -84,4 +84,6 @@ connection for many tasks, so it is possible to make changes locally and then
 
 ## Git workflow
 
-Git repositories consist of a sequence of *commits*
+Git repositories consist of a sequence of *commits*, each of which contain
+changes to one or more files. Each file must be *staged* using `git add`, and
+then all the files can be commited using `git commit`.

@@ -64,6 +64,24 @@ Although version control makes team working easier, you can still get many of
 the benefits as a sole developer. For example, the notes for this workshop are
 kept in version control, even though they were written by a single author.
 
+## History
+
+One of the largest open source projects in terms of the number of contributors
+and amount of code is the Linux kernel. Until early 2005, the kernel developers
+had used a proprietary piece of software called BitKeeper for version control.
+The owner of BitKeeper had allowed the kernel developers to use the software
+for free, instead of having to purchase commercial licences.
+
+In April 2005 BitKeeper withdrew the option of free licences, citing the efforts
+of some developers to reverse-engineer the metadata associated with changes made
+with BitKeeper. Linus Torvalds responded by developing a new version control
+system, Git, and within a couple of months it was being used to manage a
+release of the kernel.
+
+Although Git was written with the Linux kernel in mind, many other projects
+found that it met their needs and offered advantages over other popular version
+control systems such as CVS and Subversion.
+
 ## Why Git?
 
 There are several distributed version control systems available, including

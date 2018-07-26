@@ -1,10 +1,9 @@
-SRC=notes.md
-PDF=$(SRC:.md=.pdf)
+PDF_FILES = output/notes.pdf output/requirements.pdf
 
-all: $(PDF)
+all: $(PDF_FILES)
 
-%.pdf: %.md
-	pandoc $< -o $@
+output/%.pdf: %.md
+		filepp $< | pandoc -o $@
 
 clean:
 	rm -rf *.pdf

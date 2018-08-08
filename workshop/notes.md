@@ -33,17 +33,6 @@ a website at [phpdeveloper.org.uk](https://www.phpdeveloper.org.uk).
 This workshop is aimed at people who are familiar with programming and who are
 new to either version control or Git.
 
-## Requirements
-
-In order to complete all the exercises, you will need to have installed Git
-version 2.6 or later. You will also need the ability to run Git on the command
-line, for example using Git Bash in Windows.
-
-Linux users can install Git through their distribution's package manager.
-
-Windows and Mac users can download the latest version of Git from
-[git-scm.com/downloads](https://git-scm.com/downloads)
-
 ## Version Control
 
 Version control is a mechanism for keeping a history of changes made to a set
@@ -112,3 +101,44 @@ connection for many tasks, so it is possible to make changes locally and then
 Git repositories consist of a sequence of *commits*, each of which contain
 changes to one or more files. Each file must be *staged* using `git add`, and
 then all the files can be commited using `git commit`.
+
+## Setting up Git
+
+Before you use Git for the first time, you need to set up your name and email
+address that will be used in commits. If you forget to do this, Git will remind
+you.
+
+For the purposes of this workshop, we will assume that you are going to use the
+same name and email address for all of your commits. However, you can also specify
+this information on a per-repository basis if required.
+
+To set the name for all of your commits:
+
+```
+git config --global user.name "Your Name Here"
+```
+
+To set your email address:
+
+```
+git config --global user.email "me@example.org"
+```
+
+You can check that both options have been set by running `git config --list`:
+
+```
+$ git config --list
+user.email=paul@xk7.net
+user.name=Paul Waring
+push.default=simple
+```
+
+The output of `git config --list` may contain more options on your machine, as
+some distributions set additional options by default. You will also see more options
+if you run the command inside an existing Git repository. Some options have default
+values, e.g. `color.ui` may be set to `true` even though it is not listed in
+`git config --list`.
+
+Ideally you want your `user.email` value to match the one you use on your Git
+service (e.g. GitHub), otherwise you may notice that your avatar does not appear
+etc.

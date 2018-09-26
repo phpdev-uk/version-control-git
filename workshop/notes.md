@@ -82,7 +82,7 @@ developers. The alternatives offer no compelling advantages for the majority of
 use cases, although they are still used by some major software projects such as
 Ubuntu (GNU Bazaar) and Mozilla (Mercurial).
 
-You may be wondering why people decide to create Mercurial and GNU Bazaar if Git
+You may be wondering why people decided to create Mercurial and GNU Bazaar if Git
 has the same functionality and a larger community. The simple reason is that
 Git, Mercurial and GNU Bazaar were all initially released within a few weeks of
 each other (March/April 2005), so at the time they were all fixing a problem

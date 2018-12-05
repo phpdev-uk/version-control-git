@@ -9,4 +9,5 @@ Topics to cover:
  * Workflows
  * Stash - git stash, git stash pop
  * Hooks
+ * Amending commits before a push (git commit --amend)
 

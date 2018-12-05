@@ -7,6 +7,6 @@ Topics to cover:
  * Branching
  * Merging
  * Workflows
- * Stash
+ * Stash - git stash, git stash pop
  * Hooks
 

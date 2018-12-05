@@ -106,7 +106,7 @@ then all the files can be commited using `git commit`.
 
 Before you use Git for the first time, you need to set up your name and email
 address that will be used in commits. If you forget to do this, Git will remind
-you.
+you the first time you try to make a commit.
 
 For the purposes of this workshop, we will assume that you are going to use the
 same name and email address for all of your commits. However, you can also specify

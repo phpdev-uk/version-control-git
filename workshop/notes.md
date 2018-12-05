@@ -82,7 +82,7 @@ developers. The alternatives offer no compelling advantages for the majority of
 use cases, although they are still used by some major software projects such as
 Ubuntu (GNU Bazaar) and Mozilla (Mercurial).
 
-You may be wondering why people decide to create Mercurial and GNU Bazaar if Git
+You may be wondering why people decided to create Mercurial and GNU Bazaar if Git
 has the same functionality and a larger community. The simple reason is that
 Git, Mercurial and GNU Bazaar were all initially released within a few weeks of
 each other (March/April 2005), so at the time they were all fixing a problem
@@ -142,3 +142,37 @@ values, e.g. `color.ui` may be set to `true` even though it is not listed in
 Ideally you want your `user.email` value to match the one you use on your Git
 service (e.g. GitHub), otherwise you may notice that your avatar does not appear
 etc.
+
+## Creating a repository
+
+Unlike centralised version control systems, Git allows you to create, or *initialise*,
+a repository anywhere you want. All you have to do is run `git init` to create
+a repository in the current directory, or `git init project` to create a
+repository in a directory called `project`:
+
+```
+$ git init project
+Initialised empty Git repository in /tmp/project/.git/
+```
+
+You can check that a repository has been created by changing into the directory
+and running `git status`:
+
+```
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
+
+There should also be a `.git` directory in the top level of the repository:
+
+```
+$ ll
+total 12
+drwxrwxr-x  3 paul paul 4096 Sep 26 18:44 ./
+drwxrwxrwt 15 root root 4096 Sep 26 18:45 ../
+drwxrwxr-x  7 paul paul 4096 Sep 26 18:45 .git/
+```

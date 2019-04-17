@@ -106,24 +106,24 @@ address that will be used in commits. If you forget to do this, Git will remind
 you the first time you try to make a commit.
 
 For the purposes of this workshop, we will assume that you are going to use the
-same name and email address for all of your commits. However, you can also specify
+same name and email address for all of your repositories. However, you can also specify
 this information on a per-repository basis if required.
 
-To set the name for all of your commits:
+To set the name for all of your repositories:
 
-```
+```bash
 git config --global user.name "Your Name Here"
 ```
 
 To set your email address:
 
-```
+```bash
 git config --global user.email "me@example.org"
 ```
 
 You can check that both options have been set by running `git config --list`:
 
-```
+```bash
 $ git config --list
 user.email=paul@xk7.net
 user.name=Paul Waring
@@ -147,7 +147,7 @@ a repository anywhere you want. All you have to do is run `git init` to create
 a repository in the current directory, or `git init project` to create a
 repository in a directory called `project`:
 
-```
+```bash
 $ git init project
 Initialised empty Git repository in /tmp/project/.git/
 ```
@@ -155,7 +155,7 @@ Initialised empty Git repository in /tmp/project/.git/
 You can check that a repository has been created by changing into the directory
 and running `git status`:
 
-```
+```bash
 $ git status
 On branch master
 
@@ -166,7 +166,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 There should also be a `.git` directory in the top level of the repository:
 
-```
+```bash
 $ ll
 total 12
 drwxrwxr-x  3 paul paul 4096 Sep 26 18:44 ./
